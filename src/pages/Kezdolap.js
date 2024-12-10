@@ -6,7 +6,7 @@ function Kezdolap() {
   const {user}=useContext(AuthContext);
   return (
     <div>Kezdolap
-    {user.name}</div>
+    {user?user.name:"Nincs bejelentkezett felhasználó"}</div>
   )
 }
 
